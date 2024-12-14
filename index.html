@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/styles.css">
+  <title>Weather</title>
+</head>
+<body class="lg:overflow-hidden lg:h-[100vh]" style="background-image: url('./images/bg-img.jpeg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+
+  <main class="pt-20">
+    <section>
+      <div class="container">
+        <ul class="weather-list flex items-center gap-y-2 flex-wrap justify-between md:gap-y-10"></ul>
+
+        <ul class="weather-info-list mt-20 pb-40">
+          <li class="weather-info-item text-white flex flex-col lg:w-[800px] lg:h-[400px] lg:gap-x-8 bg-black rounded-xl lg:flex-row">
+            <div class="bg-[url('../images/itembg.jpeg')] bg-center bg-cover h-[400px] lg:w-[350px] rounded-xl flex flex-col text-center py-6 justify-between">
+              <strong class="get-date text-6xl"></strong>
+              <img class="weather-image w-[100px] mx-auto" src="" alt="Weather image">
+              <span class="degree text-3xl"></span>
+              <strong class="info-weather text-4xl"></strong>
+            </div>
+            <div class="lg:w-[450px] px-6 flex flex-col gap-y-4 pt-8 pb-10 md:pb-5 lg:pb-0">
+              <form class="weather-form flex items-center justify-between pb-4">
+                <input class="py-2 pl-1 placeholder:text-sm border-t-0 border-l-0 border-r-0 bg-transparent border-b-2 border-white focus:outline-none focus:border-blue-500 input-search" type="text" placeholder="enter your country" aria-label="Enter your country" required minlength="1" maxlength="60">
+                <button type="submit" class="p-2 bg-green-400 rounded-md">
+                  search
+                </button>
+              </form>
+              <div class="flex items-center justify-between">
+                <strong class="">NAME</strong>
+                <strong class="country-full-name"></strong>
+              </div>
+              <div class="flex items-center justify-between">
+                <strong class="">LOCATION</strong>
+                <strong class="country-location"></strong>
+              </div>
+              <div class="flex items-center justify-between">
+                <strong class="">TEMP</strong>
+                <strong class="country-temp"></strong>
+              </div>
+              <div class="flex items-center justify-between">
+                <strong class="">HUMIDITY</strong>
+                <strong class="country-humidity"></strong>
+              </div>
+              <div class="flex items-center justify-between">
+                <strong class="">WIND SPEED</strong>
+                <strong class="country-wind-speed"></strong>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <template class="weather-template">
+    <li class="weather-item px-4 py-8 bg-slate-700 bg-opacity-30 backdrop-blur-md rounded-lg text-white flex items-start justify-between gap-1 w-44 md:w-64">
+      <div class="flex flex-col gap-y-5">
+        <div class="flex items-center gap-x-2">
+          <strong class="sys-country text-[12px] md:text-[14px]"></strong>
+          <img class="country-flag w-3" src="" alt="Country flag">
+        </div>
+        <h3 class="country-name"></h3>
+        <strong class="date"></strong>
+      </div>
+      <div>
+        <div class="flex items-center gap-x-4">
+          <img src="" class="weather-icon w-[30px] md:w-[45px]" alt="Weather's icon">
+          <span class="weather-temp"></span>
+        </div>
+      </div>
+    </li>
+  </template>
+
+  <script src="./main.js"></script>
+</body>
+</html>

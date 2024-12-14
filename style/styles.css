@@ -1,0 +1,36 @@
+.cloudy-weather {
+  background-image: url("../images/srG.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.snowy-weather {
+  background-image: url("../images/snow.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foggy-weather {
+  background-image: url("../images/foggy.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lightning-weather {
+  background-image: url("../images/lightning.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rainy-weather {
+  background-image: url("../images/rain.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sunny-weather {
+  background-image: url("../images/sunny.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
