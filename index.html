@@ -59,7 +59,7 @@
 
 
   <template class="weather-template">
-    <li class="weather-item px-4 py-8 bg-slate-700 bg-opacity-30 backdrop-blur-md rounded-lg text-white flex items-start justify-between gap-1 w-44 md:w-64">
+    <li class="weather-item px-2 md:px-4 py-8 bg-slate-700 bg-opacity-30 backdrop-blur-md rounded-lg text-white flex items-start justify-between gap-1 w-40 md:w-64">
       <div class="flex flex-col gap-y-5">
         <div class="flex items-center gap-x-2">
           <strong class="sys-country text-[12px] md:text-[14px]"></strong>
@@ -69,7 +69,7 @@
         <strong class="date text-[12px] md:text-[16px] lg:text-xl"></strong>
       </div>
       <div>
-        <div class="flex items-center gap-x-4">
+        <div class="flex items-center flex-col md:flex-row gap-4">
           <img src="" class="weather-icon w-[30px] md:w-[45px]" alt="Weather's icon">
           <span class="weather-temp"></span>
         </div>
